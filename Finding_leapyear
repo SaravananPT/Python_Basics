@@ -1,0 +1,9 @@
+a =input()
+if a.isdigit():
+  a=int(a)
+  if a % 4 == 0:
+    print('Y')
+  else:
+    print('N')
+else:
+  print('enter integer only')
