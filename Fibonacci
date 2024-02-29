@@ -1,0 +1,18 @@
+# To generate Fibonacci sequence
+
+def fibonacci(n):
+    """Generate Fibonacci sequence up to the nth term."""
+    fib_seq = [0, 1]
+    for i in range(2, n):
+        fib_seq.append(fib_seq[i-1] + fib_seq[i-2])
+    return fib_seq
+
+# Input
+num_terms = int(input("Enter the number of terms for Fibonacci sequence: "))
+
+# Generate Fibonacci sequence
+fib_sequence = fibonacci(num_terms)
+
+# Output
+print("Fibonacci sequence:")
+print(fib_sequence)
